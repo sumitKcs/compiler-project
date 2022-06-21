@@ -12,6 +12,7 @@ import "ace-builds/src-noconflict/theme-textmate";
 import "ace-builds/src-noconflict/ext-language_tools";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { solid } from '@fortawesome/fontawesome-svg-core/import.macro'
+import Footer from './Footer';
 
 
 
@@ -110,7 +111,7 @@ const App = () => {
 
   const placeholder = `This compiler supports C, C++, JAVA, Python and JavaScript codes.\nYou can switch between dark and light theme using top left moon icon`;
  
-  const date = new Date();
+
 
   //let result = output.split("\n").map((output, i)=> i? [<br/>, output]: output);
   //console.log("result",result)
@@ -179,18 +180,7 @@ const App = () => {
           </div>
         </div>
       </div>
-      <div id="bottomBar">
-
-        <div id="brandName">
-          Made with ❤️ In India
-        </div>
-        <div id="copyright">
-          &#169;{date.getFullYear()}
-        </div>
-        <div id="devName">
-          <a href="https://www.linkedin.com/in/sumitssr/">Contact Developer</a>
-        </div>
-      </div>
+        <Footer />
     </div>
 
 
