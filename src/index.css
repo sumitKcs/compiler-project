@@ -1,13 +1,189 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+body{
+ 
+  background-color: #993333;
+  height: 100px;
+  margin: 0px;
+  padding: 0;
+}
+#col1{
+  align-self: flex-start;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#flexBoard {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  
+}
+
+
+#col2{
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-right: 6px;
+
+}
+#lang{
+  font-size: 20px;
+}
+#input{
+  height: 60%;
+  background-color: black;
+}
+#inputBox{
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+textarea{
+  font-size: 20px;
+  width: 100%;
+  height: 100%;
+  resize: none;
+}
+#output{
+  height: 100%;
+  font-size: 20px;
+  
+}
+#outputBox{ 
+  height: 99%;
+}
+#run{
+  border: 2px solid #993333;
+  width: 100%;
+  
+}
+
+#runButton{
+  font-size: large;
+  color: white;
+  letter-spacing: 10px;
+  width: 100%;
+  padding: 7px;
+  background-color: #993333;
+}
+#runButton:hover{
+  background-color: #793535;
+  color: white;
+  letter-spacing: 5px;
+  
+}
+
+
+#title{
+  
+  font-size: x-large;
+  color: white;
+  letter-spacing: 10px;
+  background-color: #993333;
+  padding: 0;
+  margin: 0px 45px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+ 
+}
+#darkMode{
+  color:black;
+  width:55px;
+  font-size:30px;
+  align-self: center;
+}
+
+#brightMode{
+  color: white;
+  width:55px;
+  font-size:30px;
+  align-self: center;
+}
+
+#titleName{
+  align-self: center;
+}
+#item3{
+  
+  height: 40px;
+  width: 77px;
+}
+#bottomBar{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  height: 100%;
+  width: 100%;
+  font-weight: 700;
+  
+}
+
+#copyright{
+  font-size: large;
+  color: white;
+  letter-spacing: 7px;
+  background-color: #993333;
+  padding: 5px;
+  text-align: center;
+  align-self: baseline;
+ 
+}
+#brandName{
+  
+  font-size: large;
+  color: white;
+  letter-spacing: 7px;
+  background-color: #993333;
+  padding: 5px;
+  text-align: center;
+
+}
+#devName{
+  
+  font-size: large;
+  color: white;
+  letter-spacing: 7px;
+  background-color: #993333;
+  padding: 5px;
+  text-align: center;
+ 
+  
+}
+a{
+  color: white;
+}
+a:hover{
+  color: greenyellow;
+  
+}
+#language{
+  border: 2px solid #993333 ;
+  height: 10%;
+  width: 100%;
+  margin: 0;
+  background-color: #993333;
+ 
+}  
+select{
+  color: white;
+  letter-spacing: 8px;
+  background-color: #993333;
+  font-size: large;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  
+}    
+
+
+@media (max-width: 768px){
+  
+}
+@media (min-width:769px) and ( max-width: 1199px) {
+
 }
