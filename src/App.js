@@ -29,7 +29,7 @@ const App = () => {
   const [style, setStyle] = useState('darkMode');
   const [bgColor, setBgColor] = useState('black')
   const [textColor, setTextColor] = useState('white')
-  
+
 
   const handleEditor = (newValue) => {
     setCode(newValue);
@@ -48,18 +48,18 @@ const App = () => {
       m = "javascript"
     }
     setAceMode(m)
-    
+
   }
   const handleInput = (e) => {
     setInput(e.target.value);
   }
-  const handleTheme=(e) => {
-    if(style === "darkMode"){
+  const handleTheme = (e) => {
+    if (style === "darkMode") {
       setTheme('textmate')
       setStyle("brightMode")
       setBgColor("#d6d6d6")
       setTextColor("black")
-    }else {
+    } else {
       setTheme('monokai')
       setStyle("darkMode")
       setBgColor("black")
@@ -97,9 +97,9 @@ const App = () => {
 
         } finally {
           setIsLoading(false)
-         
+
         }
-      } else{
+      } else {
         setOutput("Please Check your code.")
       }
     } else {
@@ -110,7 +110,7 @@ const App = () => {
   };
 
   const placeholder = `This compiler supports C, C++, JAVA, Python and JavaScript codes.\nYou can switch between dark and light theme using top left moon icon`;
- 
+
 
 
   //let result = output.split("\n").map((output, i)=> i? [<br/>, output]: output);
@@ -143,7 +143,7 @@ const App = () => {
                 copyWithEmptySelection: true,
                 enableBasicAutocompletion: true,
                 enableLiveAutocompletion: true,
-                
+
               }}
 
             />
@@ -159,13 +159,12 @@ const App = () => {
                 <option value="java">JAVA</option>
                 <option value="py">Python</option>
                 <option value="js">JavaScript</option>
-
               </select>
             </div>
           </div>
           <div id="input">
             <div id="inputBox">
-              <textarea style={{backgroundColor:`${bgColor}`, color:`${textColor}`}} placeholder="Write your inputs here...." onChange={handleInput}></textarea>
+              <textarea style={{ backgroundColor: `${bgColor}`, color: `${textColor}` }} placeholder="Write your inputs here...." onChange={handleInput}></textarea>
             </div>
           </div>
           <div id="run">
@@ -175,12 +174,12 @@ const App = () => {
           </div>
           <div id="output">
             <div id="outputBox">
-              <textarea style={{backgroundColor:`${bgColor}`, color:`${textColor}`}} defaultValue={output} readOnly></textarea>
+              <textarea style={{ backgroundColor: `${bgColor}`, color: `${textColor}` }} defaultValue={output} readOnly></textarea>
             </div>
           </div>
         </div>
       </div>
-        <Footer />
+      <Footer />
     </div>
 
 
